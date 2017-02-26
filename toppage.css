@@ -1,0 +1,369 @@
+
+
+body{
+  width:1260px;
+  /*background-color: #00cdff ;*/
+}
+
+a{color:black;}
+a{text-decoration:none;}
+a:active{text-decoration:none;}
+a:visited{text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+
+.header{
+  height:105px ;
+  width:100%;
+}
+
+.title{
+
+  text-shadow: 10px 10px 5px  ;
+  font-size: 70px ;
+  text-align: center;
+  margin: 0px;
+  /*height:50px ;
+  width:300px ;
+  margin-left: 550px;
+  margin-top:0px ;*/
+  color:gray ;
+}
+
+
+
+.main{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*パンくずリスト*/
+/*.breadcrumb li {
+  list-style: none ;
+}
+
+.breadcrumb ul{
+  margin:0px ;
+}
+
+*/
+
+
+
+.category{
+  width:100% ;
+  /*float: left;*/
+  /*margin-left: 40px ;*/
+  /*margin-top: 30px;*/
+
+}
+
+.category ul {
+
+background-color: gray ;
+margin-top:0px ;
+margin-left: auto;
+margin-right: auto;
+/*この３行を記述することで左詰にすることができる*/
+list-style: none ;
+/*margin: 0px;
+padding: 0px;*/
+}
+
+
+.category li {
+  color:white ;
+  text-align: center;
+  width: 120px ;
+  display:inline-block;
+}
+
+.category li:hover{
+  box-shadow: 5px 5px 5px ;
+}
+
+
+/*.dropmenu{
+  *zoom: 1;
+  list-style-type: none;
+  margin: 5px auto 30px;
+  padding: 0;
+}*/
+
+.dropmenu:before, .dropmenu:after{
+  content: "";
+  display: table;
+}
+
+.dropmenu:after{
+  clear: both;
+}
+
+.dropmenu li{
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+.dropmenu li a{
+  display: block;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.dropmenu li ul{
+
+  list-style: none;
+  position: absolute;
+  z-index: 9999;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+ li ul{
+  display: none;
+}
+
+ li:hover ul{
+  display: block;
+  cursor: pointer;
+}
+
+
+
+/*#love,#simulation,#rpg,#sports,#accion,#table,#sound{
+  box-shadow: 5px 5px 5px ;
+}
+
+#divination,#date,#marriage,#mathcmakingparty,#couple {
+  box-shadow: 5px 5px 5px ;
+}
+
+#travel,#cars,#music,#gamble,#planemilitary{
+    box-shadow: 5px 5px 5px ;
+}
+
+#healthcare,#diet{
+  box-shadow: 5px 5px 5px ;
+}
+
+#english,#chinese,#primary,#high{
+  box-shadow: 5px 5px 5px ;
+}
+
+#outdoor,#training,#trainingmanagement{
+  box-shadow: 5px 5px 5px ;
+}
+
+#namecardmng,#schedule,#taskmng{
+    box-shadow: 5px 5px 5px ;
+}
+
+#skincare,#hairstyle,#makeup{
+  box-shadow: 5px 5px 5px ;
+}
+
+#facebook,#twitter,#instagram{
+  box-shadow: 5px 5px 5px ;
+}*/
+
+.contents{
+  width:900px ;
+  margin-top: 30px ;
+  float: left;
+
+
+}
+
+.contents img{
+  height:350px ;
+  width:350px ;
+  /*float:left;
+  margin-right: 10px ;*/
+}
+
+.contents-item{
+  /*border:2px solid black ;*/
+  position: relative;
+  height:500px ;
+  width:400px ;
+  margin:10px ;
+  float:left;
+  border-color: black ;
+
+}
+
+.contents-item ul{
+  list-style-image: url("いかりのアイコン.png");
+}
+
+.contents-item li {
+  margin-top: 20px;
+}
+
+/*アプリの説明欄*/
+.inst{
+  clear:left;
+  line-height: 10px ;
+  font-size: 15px;
+  margin: 0px ;
+  word-wrap: break-word;
+  /*border-top: 1px dotted black ;*/
+}
+
+.label{
+  position: absolute;;
+  height: 60px ;
+  width:40px;
+  background-color: gold;
+  top:-20px;
+  left:20px ;
+}
+
+.label p{
+  text-align: center;
+  font-weight:bold;
+}
+/*--------------------------------------------------------------------------------------*/
+
+.ranking ul {
+/*この３行を記述することで左詰にすることができる*/
+list-style:none;
+margin:0px;
+padding: 0px;
+}
+
+.ranking img{
+  height:50px ;
+  width:50px ;
+}
+
+
+.ranking li {
+  margin-bottom: 20px ;
+  height:60px ;
+}
+
+
+
+.ranking-appicon{
+  width:50px ;
+  height:50px ;
+  float:left;
+}
+.ranking-appinfo{
+  height:60px ;
+}
+
+.ranking-appinfo p{
+  font-size: 15px ;
+  margin-left:50px ;
+}
+
+
+.ranking{
+  width:250px;
+  float: left;
+  margin-top: 30px;
+}
+
+/*------------------------------------------------------------------*/
+
+
+.access_appinfo p{
+  margin:0px ;
+}
+
+.access_appinfo{
+  height:60px ;
+}
+
+.access_appicon{
+  width:50px ;
+  height:50px ;
+  float:left;
+}
+
+.access_ranking{
+  width:250px;
+  float: left;
+  margin-top: 30px;
+}
+
+.access_ranking ul {
+/*この３行を記述することで左詰にすることができる*/
+list-style:none;
+margin:0px;
+padding: 0px;
+}
+
+.access_ranking img{
+  height:50px ;
+  width:50px ;
+}
+
+
+.access_ranking li {
+  margin-bottom: 20px ;
+  height:60px ;
+}
+
+/*-------------------------------------------------------------*/
+
+
+.pages{
+  clear:left;
+  text-align: center;
+}
+
+
+table {
+  border-collapse: collapse;
+  width:200px ;
+  /*margin-left,rightで中央寄せ*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+td {
+  margin-right: 30px;
+}
+
+.footer{
+  margin-top:50px ;
+  border-top: 1px solid black ;
+  width:100% ;
+  height: 500px;
+  clear:both;
+}
+
+.footer ul {
+width:100% ;
+padding: 0px ;
+}
+
+.footer li {
+  margin-bottom: 5px;
+  list-style: none ;
+}
+
+
+.wrap-maps{
+  height:100% ;
+}
+
+.wrap-maps > div {
+  float:left ;
+  width:200px ;
+  height:300px ;
+}
