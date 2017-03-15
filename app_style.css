@@ -1,14 +1,18 @@
 
+/*中央配置******************************/
 body{
-
+  /*width:1260px;*/
   text-align: center;
 
+    /*background-color: #00cdff ;*/
 }
+
 .wrap {
     width: 1100px;
     margin: 0 auto;
     text-align: left;
 }
+/****************************************************:*/
 
 a{color:black;}
 a{text-decoration:none;}
@@ -35,22 +39,6 @@ a:hover{text-decoration:underline;}
   color:gray ;
 }
 
-
-
-
-/*パンくずリスト*/
-/*.breadcrumb li {
-  list-style: none ;
-}
-
-.breadcrumb ul{
-  margin:0px ;
-}
-
-*/
-
-
-
 .category{
   width:100% ;
   /*float: left;*/
@@ -65,7 +53,7 @@ background-color: gray ;
 margin-top:0px ;
 margin-left: auto;
 margin-right: auto;
-この３行を記述することで左詰にすることができる
+/*この３行を記述することで左詰にすることができる*/
 list-style: none ;
 margin: 0px;
 padding: 0px;
@@ -84,12 +72,6 @@ padding: 0px;
 }
 
 
-/*.dropmenu{
-  *zoom: 1;
-  list-style-type: none;
-  margin: 5px auto 30px;
-  padding: 0;
-}*/
 
 .dropmenu:before, .dropmenu:after{
   content: "";
@@ -139,6 +121,14 @@ padding: 0px;
 
 
 
+
+
+
+
+/*------------------------------------------------------------------------*/
+
+
+
 /*#love,#simulation,#rpg,#sports,#accion,#table,#sound{
   box-shadow: 5px 5px 5px ;
 }
@@ -175,63 +165,161 @@ padding: 0px;
   box-shadow: 5px 5px 5px ;
 }*/
 
+/*------------------------------------------------------------------------------------------*/
+
 .contents{
   width:850px ;
-  margin-top: 30px ;
-  float: left;
-
 
 }
 
-.contents img{
-  height:350px ;
-  width:350px ;
-  /*float:left;
-  margin-right: 10px ;*/
+.contents-item a:link,a:visited,a:hover,a:active{
+  text-decoration: none ;
+}
+
+
+
+.for_android, .for_iphone{
+  display: inline-block;
+  font-size: 10px ;
+  margin:5px;
+  text-align: center;
+  width:80px;
+  height:20px ;
+  border:1px dotted black ;
+}
+
+
+.dl_bt{
+  background-color: #00deff ;
+  display: inline-block;
+  height:30px ;
+  width:100px ;
+  color:white ;
+  border-radius: 20px ;
+  padding-left: 20px ;
+  padding-right: 20px ;
+  margin: 0px ;
+  clear: left;
+}
+
+.info{
+  display: inline-block;
+  height:130px ;
+}
+
+.side_info{
+  float: left;
+}
+
+.price_app{
+  width:100px ;
+  text-align: center;
+}
+
+.info_details{
+  overflow: hidden;
+    margin: 0;
+    color: #666;
+    font-size: 12px;
+}
+
+.info_details dt{
+  float:left;
+}
+
+.calificate{
+  display: inline-block;
+  width:100% ;
+  height:30px ;
+  margin-top: 10px;
+}
+
+
+.side_info img{
+  height:100px ;
+  width:100px ;
+  /*float:left;*/
+  margin-right: 10px ;
 }
 
 .contents-item{
-  /*border:2px solid black ;*/
-  position: relative;
-  height:500px ;
-  width:400px ;
-  margin:10px ;
+  width:800px ;
   float:left;
-  border-color: black ;
+  margin-top: 30px ;
+}
+
+.app-name{
+  margin: 0px ;
+}
+
+.advance_info{
+  margin-top: 20px ;
+}
+
+.img_cnt{
+  width:100%;
+  height:250px ;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  /*border: 2px solid blue ;*/
+}
+
+.img_wr{
+  width:5000px ;
 
 }
 
-.contents-item ul{
-  list-style-image: url("いかりのアイコン.png");
+.scimg{
+  float:left;
+  margin-right: 10px ;
 }
 
-.contents-item li {
-  margin-top: 20px;
+.scimg img{
+  height:250px ;
+  width:300px ;
 }
+
+.wrap_screenshots_title{
+  height:364px;
+  /*background-color: gray ;*/
+}
+
+
+.review01{
+  height:350px ;
+  margin-bottom: 50px ;
+}
+
+.review  img{
+    width:300px ;
+    height: 250px ;
+    float: left;
+}
+
+.review_inst{
+  width:420px;
+  height:350px ;
+  float:left;
+  margin-left:10px ;
+}
+
+.review_inst > p{
+word-break:break-all
+}
+
 
 /*アプリの説明欄*/
-.inst{
+/*.inst{
   clear:left;
   line-height: 10px ;
-  font-size: 15px;
+  font-size: 9px;
   margin: 0px ;
-  word-wrap: break-word;
-  /*border-top: 1px dotted black ;*/
-}
+  border-top: 1px dotted black ;
+}*/
 
-.label{
-  position: absolute;;
-  height: 60px ;
-  width:40px;
-  top:-20px;
-  left:20px ;
-}
-
-.label p{
-  text-align: center;
-  font-weight:bold;
-}
 /*--------------------------------------------------------------------------------------*/
+
+
 
 .ranking ul {
 /*この３行を記述することで左詰にすることができる*/
@@ -252,6 +340,10 @@ padding: 0px;
 }
 
 
+/*.ranking a{
+  width:100% ;
+  height:100% ;
+}*/
 
 .ranking-appicon{
   width:50px ;
@@ -259,20 +351,28 @@ padding: 0px;
   float:left;
 }
 .ranking-appinfo{
+  width: 100% ;
   height:60px ;
 }
 
 .ranking-appinfo p{
-  font-size: 15px ;
-  margin-left:50px ;
+  margin:0px ;
 }
 
-
+/*.ranking-num{
+  float:left ;
+  height:20px ;
+  width:20px ;
+  margin-right: 5px ;
+  padding-top: 10px ;
+  background-color: gold ;
+}*/
 .ranking{
   position: relative;
   width:220px;
   float: left;
-  margin-top: 60px;
+  margin-top: 30px;
+  margin-left: 60px ;
 }
 
 #num01{
@@ -297,8 +397,7 @@ padding: 0px;
     background-color:  #816D46 ;
 }
 
-
-/*------------------------------------------------------------------*/
+/*----------------------------------------------------*/
 
 
 .access_appinfo p{
@@ -320,6 +419,7 @@ padding: 0px;
   width:220px;
   float: left;
   margin-top: 30px;
+  margin-left: 60px ;
 }
 
 .access_ranking ul {
@@ -340,10 +440,52 @@ padding: 0px;
   height:60px ;
 }
 
-/*-------------------------------------------------------------*/
+/*-----------------------------------------------------*/
+
+.wrap_review{
+  height:100% ;
+  clear:left;
+}
+
+.wrap_user_review img {
+  width:60px ;
+  height:60px ;
+  margin-right: 10px ;
+  border-radius: 100px ;
+  float: left;
+}
+.satisfaction,.nickname{
+  position: relative;
+  margin-left: 10px ;
+  width: 100px ;
+  height:30px ;
+}
 
 
+.user_review_info{
+  float: left;
+  margin-right: 20px ;
+}
+.user_review {
+  border-left: 2px solid blue ;
+  width:450px ;
+  padding-left: 10px ;
+  float: left;
+}
+.user_review p{
+  word-break:break-all;
+  margin: 0px ;
+}
+
+.wrap_user_review{
+  height: 200px ;
+  width:900px ;
+  border-bottom: 1px dotted black ;
+}
+
+/*-----------------------------------------------------*/
 .pages{
+  margin-top: 50px ;
   clear:left;
   text-align: center;
 }
@@ -361,7 +503,7 @@ table {
 td {
   margin-right: 30px;
 }
-
+/*------------------------------------------------------------------*/
 .footer{
   margin-top:50px ;
   border-top: 1px solid black ;
