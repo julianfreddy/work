@@ -39,27 +39,27 @@ a:hover{text-decoration:underline;}
   color:gray ;
 }
 
-.category{
-  width:100% ;
+/*.category{
+  width:100% ;*/
   /*float: left;*/
   /*margin-left: 40px ;*/
   /*margin-top: 30px;*/
 
-}
+/*}*/
 
-.category ul {
+/*.category ul {
 
 background-color: gray ;
 margin-top:0px ;
 margin-left: auto;
-margin-right: auto;
+margin-right: auto;*/
 /*この３行を記述することで左詰にすることができる*/
-list-style: none ;
+/*list-style: none ;
 margin: 0px;
 padding: 0px;
-}
+}*/
 
-
+/*
 .category li {
   color:white ;
   text-align: center;
@@ -117,6 +117,70 @@ padding: 0px;
  li:hover ul{
   display: block;
   cursor: pointer;
+}*/
+div.menubar {
+background-color: gray; /* バーの背景色 */
+border-top: 3px double black; /* バーの上端線 */
+border-bottom: 3px double black; /* バーの下端線 */
+min-width: 630px; /* メインメニュー全部が収まる最低横幅 */
+}
+
+div.menubar ul#menu {
+margin: 0px 0px 0px 15px; /* メニューバー外側の余白 */
+padding: 0px; /* メニューバー内側の余白 */
+height: 40px; /* メニューバーの高さ */
+}
+div.menubar ul#menu li {
+width: 120px; /* メニュー項目の横幅 */
+height: 40px; /* メニュー項目の高さ(「メニューバーの高さ」と一致させる) */
+float: left;
+list-style-type: none;
+position: relative;
+}
+div.menubar ul#menu a {
+background-color: gray; /* メニュー項目の背景色 */
+color: white; /* メニュー項目の文字色 */
+line-height: 40px; /* メニュー項目のリンクの高さ(「メニュー項目の高さ」と一致させる) */
+text-align: center; /* メインメニューの文字列の配置(中央寄せ) */
+text-decoration: none; /* メニュー項目の装飾(下線を消す) */
+display: block;
+width: 100%;
+height: 100%;
+}
+
+div.menubar ul#menu a:hover {
+background-color: white; /* メニュー項目にマウスが載ったときの背景色 */
+color: black; /* メニュー項目にマウスが載ったときの文字色 */
+}
+/* メニューバー直後のClearfix */
+div.menubar ul#menu { zoom:1; }
+div.menubar ul#menu:after { height: 0; visibility: hidden; content: "."; display: block; clear: both;
+}
+div.menubar ul#menu ul.sub {
+background-color: gray; /* サブメニュー全体の背景色 */
+border-width: 1px 1px 0px 1px; /* サブメニュー全体の枠線の太さ */
+border-style: solid; /* サブメニュー全体の枠線の線種 */
+border-color: black; /* サブメニュー全体の枠線の色 */
+margin: 0px;
+padding: 0px;
+display: none;
+position: absolute;
+}
+div.menubar ul#menu ul.sub li {
+width: 135px; /* サブメニュー1項目の横幅 */
+height: 35px; /* サブメニュー1項目の高さ */
+border-width: 0px 0px 1px 0px; /* サブメニュー1項目の枠線の太さ */
+border-style: solid; /* サブメニュー1項目の枠線の線種 */
+border-color: black; /* サブメニュー1項目の枠線の色 */
+}
+div.menubar ul#menu ul.sub li a {
+line-height: 35px; /* サブメニュー1項目の行の高さ(「サブメニュー1項目の高さ」と合わせる) */
+text-align: left;  /* サブメニュー1項目の項目名の配置(左寄せ) */
+text-indent: 5px;  /* サブメニュー1項目の項目名前方の余白 */
+}
+div.menubar ul#menu ul.sub li a:hover {
+background-color: white; /* サブメニュー項目にマウスが載ったときの背景色 */
+color: black; /* サブメニュー項目にマウスが載ったときの文字色 */
 }
 
 
@@ -128,42 +192,6 @@ padding: 0px;
 /*------------------------------------------------------------------------*/
 
 
-
-/*#love,#simulation,#rpg,#sports,#accion,#table,#sound{
-  box-shadow: 5px 5px 5px ;
-}
-
-#divination,#date,#marriage,#mathcmakingparty,#couple {
-  box-shadow: 5px 5px 5px ;
-}
-
-#travel,#cars,#music,#gamble,#planemilitary{
-    box-shadow: 5px 5px 5px ;
-}
-
-#healthcare,#diet{
-  box-shadow: 5px 5px 5px ;
-}
-
-#english,#chinese,#primary,#high{
-  box-shadow: 5px 5px 5px ;
-}
-
-#outdoor,#training,#trainingmanagement{
-  box-shadow: 5px 5px 5px ;
-}
-
-#namecardmng,#schedule,#taskmng{
-    box-shadow: 5px 5px 5px ;
-}
-
-#skincare,#hairstyle,#makeup{
-  box-shadow: 5px 5px 5px ;
-}
-
-#facebook,#twitter,#instagram{
-  box-shadow: 5px 5px 5px ;
-}*/
 
 /*------------------------------------------------------------------------------------------*/
 
@@ -186,8 +214,12 @@ padding: 0px;
   width:80px;
   height:20px ;
   border:1px dotted black ;
+  cursor: pointer;
 }
 
+.for_android:hover, .for_iphone:hover{
+  box-shadow: 5px 5px;
+}
 
 .dl_bt{
   background-color: #00deff ;
@@ -284,7 +316,18 @@ padding: 0px;
   /*background-color: gray ;*/
 }
 
+.wrap_review > h2{
+  display: inline-block;
+  margin-right: 40px ;
+}
 
+#review_bt{
+  width:200px ;
+}
+
+
+
+/*****************************************/
 .review01{
   height:350px ;
   margin-bottom: 50px ;

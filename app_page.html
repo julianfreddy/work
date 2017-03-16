@@ -9,80 +9,72 @@
 </head>
 <body>
 <div class="wrap">
-
         <div class="header">
          <h1 class="title">App King</h1>
         </div>
       <div class="main">
-        <div class="category">
-          <ul class="dropmenu">
-            <li>TOP
-              <ul>
-                <li>julian</li>
-                <li>freddy</li>
-                <li>libe</li>
-                <li>enrique</li>
+        <div class="menubar">
+          <ul id="menu">
+            <li><a>TOP</a></li>
+            <li><a>ゲーム</a>
+              <ul class="sub">
+                <li><a>シミュレーション</a></li>
+                <li><a>恋愛</a></li>
+                <li><a>RPG</a></li>
+                <li><a>スポーツ</a></li>
+                <li><a>アクション</a></li>
+                <li><a>テーブル</a></li>
+                <li><a>音ゲー</a></li>
               </ul>
             </li>
-            <li>ゲーム
-              <ul>
-                <li>シミュレーション</li>
-                <li>恋愛</li>
-                <li>RPG</li>
-                <li>スポーツ</li>
-                <li>アクション</li>
-                <li>テーブル</li>
-                <li>音ゲー</li>
+            <li><a>音楽</a>
+              <ul class="sub">
+                <li><a>音楽ダウンロード</a></li>
+                <li><a></a></li>
+                <li><a></a></li>
               </ul>
             </li>
-            <li>音楽
-              <ul>
-                <li>音楽ダウンロード</li>
-                <li></li>
-                <li></li>
+            <li><a>ビジネス</a>
+              <ul class="sub">
+                <li><a>名刺管理</a></li>
+                <li><a>タスク管理</a></li>
               </ul>
             </li>
-            <li>ビジネス
-              <ul>
-                <li>名刺管理</li>
-                <li>タスク管理</li>
+            <li><a>美容・健康</a>
+              <ul class="sub">
+                <li><a>ヘアスタイル</a></li>
+                <li><a>ヘルスケア</a></li>
+                <li><a>スキンケア</a></li>
+                <li><a>メイクアップ</a></li>
+                <li><a>ダイエット</a></li>
               </ul>
             </li>
-            <li>美容・健康
-              <ul>
-                <li>ヘアスタイル</li>
-                <li>ヘルスケア</li>
-                <li>スキンケア</li>
-                <li>メイクアップ</li>
-                <li>ダイエット</li>
+            <li><a>SNS</a>
+              <ul class="sub">
+                <li><a>Facebook</a></li>
+                <li><a>Twitter</a></li>
+                <li><a>Instagram</a></li>
               </ul>
             </li>
-            <li>SNS
-              <ul>
-                <li>Facebook</li>
-                <li>Twitter</li>
-                <li>Instagram</li>
+            <li><a>教育</a>
+              <ul class="sub">
+                <li><a>小学校の勉強</a></li>
+                <li><a>中高の勉強</a></li>
+                <li><a>英語</a></li>
               </ul>
             </li>
-            <li>教育
-              <ul>
-                <li>小学校の勉強</li>
-                <li>中高の勉強</li>
-                <li>英語</li>
+            <li><a>趣味</a>
+              <ul class="sub">
+                <li><a>釣り</a></li>
+                <li><a>プラモデル</a></li>
+                <li><a>映画鑑賞</a></li>
               </ul>
             </li>
-            <li>趣味
-              <ul>
-                <li>釣り</li>
-                <li>プラモデル</li>
-                <li>映画鑑賞</li>
-              </ul>
-            </li>
-            <li>スポーツ
-              <ul>
-                <li>アウトドア</li>
-                <li>サッカー</li>
-                <li>野球</li>
+            <li><a>スポーツ</a>
+              <ul class="sub">
+                <li><a>アウトドア</a></li>
+                <li><a>サッカー</a></li>
+                <li><a>野球</a></li>
               </ul>
             </li>
           </ul>
@@ -107,7 +99,7 @@
         <div class="calificate">満足度:70%</div>
         <div class="for_android">android用</div>
         <div class="for_iphone">iphone用</div>
-        <p class="dl_bt"><a href="https://itunes.apple.com/jp/app/dishidiafainarufantaji-operaomunia/id1117329809?mt=8">
+        <p class="dl_bt"><a id="dl_link" target="_blank">
           ダウンロード
         </a>
       </p>
@@ -296,6 +288,7 @@
     </div>
     <div class="wrap_review">
       <h2>ユーザーレビュー</h2>
+      <button id="review_bt">レビューを書く</button>
       <div class="wrap_user_review">
         <img src="スクリーンショット 2017-02-20 13.17.18.png">
         <div class="user_review_info">
@@ -529,5 +522,37 @@
     </div>
   </div>
 </div>
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+
+  $(function(){
+
+
+    $('.for_android').click(function(){
+      $(this).css('background-color','red') ;
+      $('.for_iphone').css('background-color','white') ;
+      $('#dl_link').attr('href','https://play.google.com/store/apps/details?id=com.square_enix.android_googleplay.DFFOperaOmniaj&hl=ja') ;
+    }) ;
+
+    $('.for_iphone').click(function(){
+      $(this).css('background-color','red') ;
+      $('.for_android').css('background-color','white') ;
+      $('#dl_link').attr('href','https://itunes.apple.com/jp/app/dishidiafainarufantaji-operaomunia/id1117329809?mt=8') ;
+    }) ;
+
+    $("#menu li").hover(function(){
+       $("ul",this).show();
+    },
+    function(){
+       $("ul",this).hide();
+    });
+    // $('.for_iphone').click(function(){
+    //         $(this).css('background','red') ;
+    // }) ;
+
+
+  });
+
+</script>
 </body>
 </html>
